@@ -1,8 +1,70 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
+@import "fontawesome/scss/fontawesome.scss"
+@import "fontawesome/scss/regular.scss"
+@import "fontawesome/scss/solid.scss"
+@import "fontawesome/scss/brands.scss"
+// CUSTOM
+$color-fondo: rgb(250,250,250)
+$color-marca: rgb(235,28,36)
+$color-texto: rgb(78,76,77)
+
 
 body
-  padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  background-color: $color-fondo
 
-a
-  color: #00B7FF
+@media (max-width: 991.98px)
+
+  .offcanvas-collapse
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 100%
+    width: 100%
+    padding-right: 1rem
+    padding-left: 1rem
+    overflow-y: auto
+    visibility: hidden
+    background-color: darken($color-fondo, 50%)
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s
+    transition-property: left, visibility
+
+  .offcanvas-collapse.open
+    left: 0
+    visibility: visible
+
+
+.nav-scroller
+  position: relative
+  z-index: 2
+  height: 2.75rem
+  overflow-y: hidden
+
+.nav-scroller .nav
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: nowrap
+  flex-wrap: nowrap
+  padding-bottom: 1rem
+  margin-top: -1px
+  overflow-x: auto
+  color: rgba(255, 255, 255, .75)
+  text-align: center
+  white-space: nowrap
+  -webkit-overflow-scrolling: touch
+
+
+.nav-underline .nav-link
+  padding-top: .75rem
+  padding-bottom: .75rem
+  font-size: .875rem
+  color: $color-marca
+
+
+.nav-underline .nav-link:hover
+  color: $color-marca
+
+
+.nav-underline .active
+  font-weight: 500
+  color: $color-marca
