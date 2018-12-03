@@ -16,3 +16,15 @@ html
     script(src='/javascripts/bootstrap.min.js', type='application/javascript', charset="UTF-8")
     script(src='/javascripts/wow.min.js', type='application/javascript', charset="UTF-8")
     script(src='/javascripts/rebel.js', type='application/javascript', charset='UTF-8')
+    script
+      |   wow = new WOW(
+      |  {
+      | boxClass:     'wow',      // default
+      |  animateClass: 'animated', // default
+      |  offset:       0,          // default
+      |  mobile:       true,       // default
+      |  live:         true        // default
+      |  }
+      |  )
+      |  wow.init();
+  
