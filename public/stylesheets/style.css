@@ -39,11 +39,27 @@ body {
       color: #c3060d; }
       #mainNav .navbar-nav > li > a:focus:hover, #mainNav .navbar-nav > li > a:focus:focus:hover {
         color: #f81e26; }
+  #mainNav .navbar-shrink > li > a {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+    #mainNav .navbar-shrink > li > a.active {
+      color: #c3060d !important;
+      background-color: transparent; }
+      #mainNav .navbar-shrink > li > a.active:hover {
+        background-color: transparent;
+        color: #717171; }
+  #mainNav:focus {
+    color: #c3060d; }
+    #mainNav:focus:hover, #mainNav:focus:focus:hover {
+      color: #f81e26; }
 
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
-    background-color: transparent; }
+    background-color: transparent;
+    padding: 1rem 1rem; }
     #mainNav .navbar-brand {
       color: #f81e26; }
       #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -63,9 +79,9 @@ body {
         #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
           color: #f81e26; }
       #mainNav.navbar-shrink .navbar-nav > li > a {
-        color: #f1f1f1; }
+        color: #717171; }
         #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-          color: #f1f1f1; }
+          color: #646464; }
         #mainNav.navbar-shrink .navbar-nav > li > a:hover, #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
           color: #f81e26; } }
 
@@ -230,33 +246,194 @@ header.masthead {
     text-align: center; }
   #servicios .services {
     list-style: none;
-    height: 15vh;
+    height: 47.5vh;
     margin-bottom: 5rem;
-    z-index: 0;
-    position: relative; }
-    #servicios .services::before {
-      content: "";
-      width: 13%;
-      height: 100%;
-      position: absolute;
-      left: -1rem;
-      bottom: -1rem;
-      background-color: #cbcbcb;
-      z-index: -1;
-      box-shadow: 34.25rem -2rem 0rem #313131; }
-    #servicios .services::after {
-      content: "";
-      width: 13%;
-      height: 100%;
-      position: absolute;
-      right: -1rem;
-      bottom: -1rem;
-      background-color: #4b4b4b;
-      z-index: -1; }
+    position: relative;
+    margin-top: 2rem; }
     #servicios .services li {
-      background-color: #f1f1f1;
-      z-index: 1;
-      height: 9rem;
-      position: relative; }
+      background-color: white;
+      height: 15vh;
+      position: relative;
+      padding: 2rem 0rem !important;
+      margin-bottom: .5rem; }
+      #servicios .services li h3 {
+        font-size: 3rem; }
+      #servicios .services li p {
+        font-size: 2rem; }
+      #servicios .services li:nth-child(1)::after {
+        content: url(../images/star-grey.png);
+        position: absolute;
+        left: 47.5%;
+        top: -.75rem;
+        z-index: 1;
+        transform: scale(0.75); }
+      #servicios .services li:nth-child(2)::after {
+        content: url(../images/star-black.png);
+        position: absolute;
+        left: 40%;
+        top: -.5rem;
+        z-index: 1;
+        transform: scale(0.75); }
+      #servicios .services li:nth-child(2) h3 {
+        position: relative; }
+        #servicios .services li:nth-child(2) h3::after {
+          content: url(../images/star-black.png);
+          position: absolute;
+          left: 47.5%;
+          top: -2.5rem;
+          z-index: 1;
+          transform: scale(0.75); }
+        #servicios .services li:nth-child(2) h3::before {
+          content: url(../images/star-black.png);
+          position: absolute;
+          left: 55%;
+          top: -2.5rem;
+          z-index: 1;
+          transform: scale(0.75); }
+      #servicios .services li h3 i {
+        color: #f81e26;
+        padding: 0rem .5rem; }
+  #servicios article h3 {
+    font-size: 3rem; }
+  #servicios article p {
+    font-size: 2rem; }
+  @media (min-width: 992px) {
+    #servicios {
+      height: 100vh;
+      min-height: 775px;
+      padding-top: 6rem;
+      padding-bottom: 0; }
+      #servicios .title {
+        color: #313131;
+        font-family: "Circular Std Black Italic";
+        font-size: 4rem;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center; }
+      #servicios .services {
+        list-style: none;
+        height: 15vh;
+        margin-bottom: 5rem;
+        margin-top: 0rem;
+        position: relative; }
+        #servicios .services li {
+          background-color: #f1f1f1;
+          height: 12rem;
+          position: relative;
+          padding: 2rem 0rem !important; }
+          #servicios .services li h3 {
+            font-size: 1.5rem; }
+          #servicios .services li p {
+            font-size: 1rem; }
+          #servicios .services li:nth-child(1)::before {
+            content: "";
+            width: 35%;
+            height: 55%;
+            background-color: #cbcbcb;
+            position: absolute;
+            left: -.5rem;
+            bottom: -.5rem;
+            z-index: -1; }
+          #servicios .services li:nth-child(2)::before {
+            content: "";
+            width: 35%;
+            height: 55%;
+            background-color: #313131;
+            position: absolute;
+            right: -.5rem;
+            top: -.5rem;
+            z-index: -1; }
+          #servicios .services li:nth-child(3)::before {
+            content: "";
+            width: 28%;
+            height: 55%;
+            background-color: #585858;
+            position: absolute;
+            right: -.5rem;
+            bottom: -.5rem;
+            z-index: -1; }
+          #servicios .services li:nth-child(1)::after {
+            content: url(../images/star-grey.png);
+            position: absolute;
+            left: 45%;
+            top: -.5rem;
+            z-index: 1;
+            transform: scale(0.75); }
+          #servicios .services li:nth-child(2)::after {
+            content: url(../images/star-black.png);
+            position: absolute;
+            left: 25%;
+            top: -.5rem;
+            z-index: 1;
+            transform: scale(0.75); }
+          #servicios .services li:nth-child(2) h3 {
+            position: relative; }
+            #servicios .services li:nth-child(2) h3::after {
+              content: url(../images/star-black.png);
+              position: absolute;
+              left: 40%;
+              top: -2.5rem;
+              z-index: 1;
+              transform: scale(0.75); }
+            #servicios .services li:nth-child(2) h3::before {
+              content: url(../images/star-black.png);
+              position: absolute;
+              left: 55%;
+              top: -2.5rem;
+              z-index: 1;
+              transform: scale(0.75); }
+          #servicios .services li h3 i {
+            color: #f81e26;
+            padding: 0rem .5rem; }
+      #servicios article h3 {
+        font-size: 1.5rem; }
+      #servicios article p {
+        font-size: 1rem; } }
+
+#producciones {
+  height: 100vh;
+  min-height: 775px;
+  padding-top: 6rem;
+  padding-bottom: 0; }
+  #producciones .title {
+    color: #313131;
+    font-family: "Circular Std Black Italic";
+    font-size: 4rem;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center; }
+  #producciones .produccions {
+    list-style: none;
+    height: 65vh;
+    margin-bottom: 5rem;
+    margin-top: 0rem;
+    position: relative;
+    background-color: #f81e26;
+    padding: 0rem 3.25rem; }
+    #producciones .produccions:nth-child(1)::before {
+      position: absolute;
+      content: "";
+      width: 150%;
+      height: 100%;
+      border: 1rem solid #cbcbcb;
+      top: 15%;
+      left: 50%;
+      z-index: -1; }
+    #producciones .produccions li {
+      height: 15vh;
+      position: relative;
+      padding: 2rem 0rem !important;
+      color: #f1f1f1; }
+      #producciones .produccions li a {
+        color: #f1f1f1;
+        text-decoration: none;
+        transition: all .25s; }
+        #producciones .produccions li a:active, #producciones .produccions li a:hover, #producciones .produccions li a:focus {
+          color: #d8d8d8;
+          text-decoration: none; }
+      #producciones .produccions li h3 {
+        font-size: 1.5rem; }
+      #producciones .produccions li p {
+        font-size: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
