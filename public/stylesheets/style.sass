@@ -6,6 +6,8 @@ $circular-book: 'Circular Std Book'
 $circular-black: 'Circular Std Black Italic'
 body
   padding: 5rem 0rem 0rem 0rem
+  width: 100vw
+  overflow-x: hidden
   @media (min-width: 992px)
     padding: 0rem
 #mainNav
@@ -89,10 +91,10 @@ body
         &:hover, &:focus:hover
           color: $color-marca
 
-
+/* HOME */
 header.masthead
   position: relative
-  width: 100%
+  width: 100vw
   padding-top: 150px
   padding-bottom: 100px
   background: $color-blanco
@@ -125,23 +127,23 @@ header.masthead
       font-size: 2rem
       font-family: $roboto
       margin-top: 1.25rem
-
-  .device-container
-    max-width: 100%
-    margin-right: auto
-    margin-left: auto
-    .screen
-      z-index: 1
-      position: relative
-      img
-        border-radius: 3px
-
+    .device-container
+      max-width: 100%
+      margin-right: auto
+      margin-left: auto
+      .screen
+        z-index: 1
+        position: relative
+        img
+          border-radius: 3px
 @media (min-width: 992px)
   header.masthead
     height: 100vh
     min-height: 775px
     padding-top: 0
     padding-bottom: 0
+    width: 100vw
+    background: $color-blanco
     .header-content
       margin-bottom: 0
       text-align: left
@@ -442,3 +444,15 @@ header.masthead
         font-size: 1.5rem
       p
         font-size: 1rem
+#blog
+  height: 100vh
+  min-height: 775px
+  padding-top: 6rem
+  padding-bottom: 0
+  .title
+    color: darken($color-gris,25%)
+    font-family: $circular-black
+    font-size: 4rem
+    text-transform: uppercase
+    position: relative
+    text-align: center

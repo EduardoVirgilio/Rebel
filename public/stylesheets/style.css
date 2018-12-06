@@ -1,5 +1,7 @@
 body {
-  padding: 5rem 0rem 0rem 0rem; }
+  padding: 5rem 0rem 0rem 0rem;
+  width: 100vw;
+  overflow-x: hidden; }
   @media (min-width: 992px) {
     body {
       padding: 0rem; } }
@@ -85,9 +87,10 @@ body {
         #mainNav.navbar-shrink .navbar-nav > li > a:hover, #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
           color: #f81e26; } }
 
+/* HOME */
 header.masthead {
   position: relative;
-  width: 100%;
+  width: 100vw;
   padding-top: 150px;
   padding-bottom: 100px;
   background: #f1f1f1; }
@@ -120,22 +123,24 @@ header.masthead {
       font-size: 2rem;
       font-family: "Roboto", sans-serif;
       margin-top: 1.25rem; }
-  header.masthead .device-container {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto; }
-    header.masthead .device-container .screen {
-      z-index: 1;
-      position: relative; }
-      header.masthead .device-container .screen img {
-        border-radius: 3px; }
+    header.masthead .header-content .device-container {
+      max-width: 100%;
+      margin-right: auto;
+      margin-left: auto; }
+      header.masthead .header-content .device-container .screen {
+        z-index: 1;
+        position: relative; }
+        header.masthead .header-content .device-container .screen img {
+          border-radius: 3px; }
 
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
     min-height: 775px;
     padding-top: 0;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    width: 100vw;
+    background: #f1f1f1; }
     header.masthead .header-content {
       margin-bottom: 0;
       text-align: left; }
@@ -435,5 +440,18 @@ header.masthead {
         font-size: 1.5rem; }
       #producciones .produccions li p {
         font-size: 1rem; }
+
+#blog {
+  height: 100vh;
+  min-height: 775px;
+  padding-top: 6rem;
+  padding-bottom: 0; }
+  #blog .title {
+    color: #313131;
+    font-family: "Circular Std Black Italic";
+    font-size: 4rem;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

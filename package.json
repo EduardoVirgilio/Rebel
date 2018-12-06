@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "livereload": "^0.7.0"
   }
 }

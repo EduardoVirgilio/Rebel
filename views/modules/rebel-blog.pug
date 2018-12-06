@@ -1,0 +1,14 @@
+#blog.container.h-100
+  .row
+    h3.col-sm-12.col-lg-12.mt-sm-5.mt-lg-0.title Blog
+  each nota in notas.blog
+    .row
+      li.col-sm-12.col-lg-12.wow.fadeInUp(data-wow-delay='0s' data-wow-duration="2s")
+        a(href="https://www.youtube.com/watch?v=vr9AuF9Mano" target="_blank")
+          h3.text-left.col-sm-12.px-0=nota.nombre
+          p
+            b=nota.resaltado
+            br
+            =nota.texto
+
+    

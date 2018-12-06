@@ -45,4 +45,14 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+var livereload = require('livereload');
+
+var server = livereload.createServer({
+  exts: [ 'js' , 'sass' , 'pug']
+});
+
+server.watch(path.join(__dirname, 'views'));
+
+server.watch(path.join(__dirname, 'public'));
+
 module.exports = app;
