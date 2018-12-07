@@ -453,5 +453,74 @@ header.masthead {
     text-transform: uppercase;
     position: relative;
     text-align: center; }
+  #blog article h4 {
+    color: #f81e26;
+    font-family: "Circular Std Black Italic";
+    font-size: 2rem; }
+  #blog article p {
+    color: #4b4b4b;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400; }
+    #blog article p b {
+      color: #646464;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700; }
+
+#contacto {
+  height: 100vh;
+  min-height: 775px;
+  padding-top: 6rem;
+  padding-bottom: 0; }
+  #contacto .title {
+    color: #313131;
+    font-family: "Circular Std Black Italic";
+    font-size: 4rem;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center; }
+  #contacto article p {
+    color: #646464;
+    font-family: "Circular Std Black Italic";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    background-color: #f1f1f1;
+    position: relative; }
+    #contacto article p::before {
+      content: "";
+      width: 50%;
+      height: 150%;
+      border: 0.25rem solid #f81e26;
+      position: absolute;
+      right: -4rem;
+      bottom: -8rem;
+      z-index: -1; }
+  #contacto form .form-control {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #f81e26;
+    background-color: transparent;
+    border-top: 0.05rem solid #717171;
+    border-left: none;
+    border-right: 0.05rem solid #717171;
+    border-bottom: 0.05rem solid #717171;
+    outline: none;
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0); }
+  #contacto form .form-control:focus {
+    color: #f81e26;
+    background-color: transparent;
+    border-top: 0.05rem solid #f81e26;
+    border-left: none;
+    border-right: 0.05rem solid #f81e26;
+    border-bottom: 0.05rem solid #f81e26;
+    outline: none;
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0); }
+  #contacto form textarea {
+    resize: none;
+    max-height: 12rem;
+    overflow-x: hidden;
+    overflow-y: scroll; }
 
 /*# sourceMappingURL=style.css.map */

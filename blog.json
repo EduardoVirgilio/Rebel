@@ -1,35 +1,30 @@
-{
-  "blog":
-  [
+{"blog":[
     {
       "idNota": 1,
       "nombre": "Lorem ipsum dolor sit amet ",
       "resaltado": "Lorem ipsum dolor sit amet consectetur",
-      "texto": " adipiscing elit ullamcorper feugiat facilisis luctus, imperdiet vel potenti diam risus pretium suscipit vehicula  fringilla aliquam a, hac ultrices."
+"texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "imagen": "/images/blog/01.jpg"
     },
     {
       "idNota": 2,
       "nombre": "Lorem ipsum dolor sit amet ",
       "resaltado": "Lorem ipsum dolor sit amet consectetur",
-      "texto": " adipiscing elit ullamcorper feugiat facilisis luctus,
-imperdiet vel potenti diam risus pretium suscipit
-vehicula  fringilla aliquam a, hac ultrices."
+"texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "imagen": "/images/blog/01.jpg"
     },
     {
       "idNota": 3,
       "nombre": "Lorem ipsum dolor sit amet ",
       "resaltado": "Lorem ipsum dolor sit amet consectetur",
-      "texto": " adipiscing elit ullamcorper feugiat facilisis luctus,
-imperdiet vel potenti diam risus pretium suscipit
-vehicula  fringilla aliquam a, hac ultrices."
+"texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "imagen": "/images/blog/01.jpg"
     },
     {
       "idNota": 4,
       "nombre": "Lorem ipsum dolor sit amet ",
       "resaltado": "Lorem ipsum dolor sit amet consectetur",
-      "texto": " adipiscing elit ullamcorper feugiat facilisis luctus,
-imperdiet vel potenti diam risus pretium suscipit
-vehicula  fringilla aliquam a, hac ultrices."
+"texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "imagen": "/images/blog/01.jpg"
     }
-  ]
-}
+]}

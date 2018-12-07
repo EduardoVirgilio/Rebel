@@ -456,3 +456,77 @@ header.masthead
     text-transform: uppercase
     position: relative
     text-align: center
+  article
+    h4
+      color: $color-marca
+      font-family: $circular-black
+      font-size: 2rem
+    p
+      b
+        color: darken($color-gris, 5%)
+        font-family: $roboto
+        font-size: 1.25rem
+        font-weight: 700
+      color: darken($color-gris, 15%)
+      font-family: $roboto
+      font-size: 1rem
+      font-weight: 400
+
+#contacto
+  height: 100vh
+  min-height: 775px
+  padding-top: 6rem
+  padding-bottom: 0
+  .title
+    color: darken($color-gris,25%)
+    font-family: $circular-black
+    font-size: 4rem
+    text-transform: uppercase
+    position: relative
+    text-align: center
+  article
+    p
+      color: darken($color-gris, 5%)
+      font-family: $circular-black
+      font-size: 1.5rem
+      text-transform: uppercase
+      font-weight: normal
+      background-color: $color-blanco
+      position: relative
+      &::before
+        content: ""
+        width: 50%
+        height: 150%
+        border: .25rem solid $color-marca
+        position: absolute
+        right: -4rem
+        bottom: -8rem
+        z-index: -1
+
+  form
+    .form-control
+      font-family: $roboto
+      font-weight: 400
+      color: $color-marca
+      background-color: transparent
+      border-top: .05rem solid $color-gris
+      border-left: none
+      border-right: .05rem solid $color-gris
+      border-bottom: .05rem solid $color-gris
+      outline: none
+      box-shadow: 0 0 0  rgba(0, 123, 255, 0)
+    .form-control:focus
+      color: $color-marca
+      background-color: transparent
+      border-top: .05rem solid $color-marca
+      border-left: none
+      border-right: .05rem solid $color-marca
+      border-bottom: .05rem solid $color-marca
+      outline: none
+      box-shadow: 0 0 0  rgba(0, 123, 255, 0)
+    textarea
+      resize: none
+      max-height: 12rem
+      overflow-x: hidden
+      overflow-y: scroll
+      
