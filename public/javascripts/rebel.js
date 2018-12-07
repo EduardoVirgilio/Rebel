@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    $('#pre-loader').delay(400).fadeOut();
+
     wow = new WOW({
       boxClass:     'wow',      // default
       animateClass: 'animated', // default
